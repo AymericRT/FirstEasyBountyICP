@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "HelloWorldBounty_backend": {
+      "main": "src/HelloWorldBounty_backend/main.mo",
+      "type": "motoko"
+    },
+    "HelloWorldBounty_frontend": {
+      "dependencies": [
+        "HelloWorldBounty_backend"
+      ],
+      "source": [
+        "src/HelloWorldBounty_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "HelloWorldBounty_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
